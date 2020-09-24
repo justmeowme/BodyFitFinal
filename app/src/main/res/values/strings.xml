@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BodyFit</string>
+    <string name="email"><u>support@bodyfit.ru</u></string>
+    <string name="politics">Продолжая, я соглашаюсь c <u>Условиями Использования, Политикой Конфиденциальности</u></string>
+    <string name="question_fragment_figure">Выберите тип фигуры,<br />который подходит вам по описанию"</string>
+    <string name="fragment_body_type_for_ecto">Худой и вытянутый, быстрый метаболизм</string>
+    <string name="fragment_body_type_for_mezo">Развитая мускулатура, средний метаболизм</string>
+    <string name="fragment_body_type_for_endo">Более округлые формы тела, медленный метаболизм</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

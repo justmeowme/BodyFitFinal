@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayFragment">
+
+    <!-- Guidelines -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Обычный день"
+        android:textColor="@color/colorText"
+        android:textSize="26sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:lines="2"
+        android:text="Выберите вашу активность в обычный день"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <ImageView
+        android:id="@+id/button_office"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <ImageView
+        android:id="@+id/emoji_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emoji_ofice"
+        app:layout_constraintBottom_toBottomOf="@+id/button_office"
+        app:layout_constraintEnd_toEndOf="@+id/button_office"
+        app:layout_constraintStart_toStartOf="@+id/button_office"
+        app:layout_constraintTop_toTopOf="@+id/button_office"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="В офисе"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_office"
+        app:layout_constraintEnd_toEndOf="@+id/button_office"
+        app:layout_constraintStart_toStartOf="@+id/button_office"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_office" />
+
+
+    <ImageView
+        android:id="@+id/button_walk"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <ImageView
+        android:id="@+id/emoji_walk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emoji_walk"
+        app:layout_constraintBottom_toBottomOf="@+id/button_walk"
+        app:layout_constraintEnd_toEndOf="@+id/button_walk"
+        app:layout_constraintStart_toStartOf="@+id/button_walk"
+        app:layout_constraintTop_toTopOf="@+id/button_walk"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewWalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Гуляю"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_walk"
+        app:layout_constraintEnd_toEndOf="@+id/button_walk"
+        app:layout_constraintStart_toStartOf="@+id/button_walk"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_walk" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/button_work"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageView
+        android:id="@+id/emoji_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emoji_work"
+        app:layout_constraintBottom_toBottomOf="@+id/button_work"
+        app:layout_constraintEnd_toEndOf="@+id/button_work"
+        app:layout_constraintStart_toStartOf="@+id/button_work"
+        app:layout_constraintTop_toTopOf="@+id/button_work"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Тружусь"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_work"
+        app:layout_constraintEnd_toEndOf="@+id/button_work"
+        app:layout_constraintStart_toStartOf="@+id/button_work"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_work" />
+
+
+
+
+    <ImageView
+        android:id="@+id/button_home"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageView
+        android:id="@+id/emoji_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emoji_home"
+        app:layout_constraintBottom_toBottomOf="@+id/button_home"
+        app:layout_constraintEnd_toEndOf="@+id/button_home"
+        app:layout_constraintStart_toStartOf="@+id/button_home"
+        app:layout_constraintTop_toTopOf="@+id/button_home"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Отдыхаю"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_home"
+        app:layout_constraintEnd_toEndOf="@+id/button_home"
+        app:layout_constraintStart_toStartOf="@+id/button_home"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_home" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

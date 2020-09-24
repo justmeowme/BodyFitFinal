@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HabitsFragment">
+
+    <!-- Guidelines -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/button_eat"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/emoji_eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eat"
+        app:layout_constraintBottom_toBottomOf="@+id/button_eat"
+        app:layout_constraintEnd_toEndOf="@+id/button_eat"
+        app:layout_constraintStart_toStartOf="@+id/button_eat"
+        app:layout_constraintTop_toTopOf="@+id/button_eat"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewEat"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+
+        android:text="Ем на ночь"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_eat"
+        app:layout_constraintEnd_toEndOf="@+id/button_eat"
+        app:layout_constraintStart_toStartOf="@+id/button_eat"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_eat" />
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/button_no_sleep"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/emoji_no_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_sleep"
+        app:layout_constraintBottom_toBottomOf="@+id/button_no_sleep"
+        app:layout_constraintEnd_toEndOf="@+id/button_no_sleep"
+        app:layout_constraintStart_toStartOf="@+id/button_no_sleep"
+        app:layout_constraintTop_toTopOf="@+id/button_no_sleep"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewNoSleep"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+
+        android:text="Мало сна"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_no_sleep"
+        app:layout_constraintEnd_toEndOf="@+id/button_no_sleep"
+        app:layout_constraintStart_toStartOf="@+id/button_no_sleep"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_no_sleep" />
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/button_eat_sugar"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+
+    <ImageView
+        android:id="@+id/emoji_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sugar"
+        app:layout_constraintBottom_toBottomOf="@+id/button_eat_sugar"
+        app:layout_constraintEnd_toEndOf="@+id/button_eat_sugar"
+        app:layout_constraintStart_toStartOf="@+id/button_eat_sugar"
+        app:layout_constraintTop_toTopOf="@+id/button_eat_sugar"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewSugar"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Не могу без сладкого"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_eat_sugar"
+        app:layout_constraintEnd_toEndOf="@+id/button_eat_sugar"
+        app:layout_constraintStart_toStartOf="@+id/button_eat_sugar"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_sugar" />
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/button_drink"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <ImageView
+        android:id="@+id/emoji_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drink"
+        app:layout_constraintBottom_toBottomOf="@+id/button_drink"
+        app:layout_constraintEnd_toEndOf="@+id/button_drink"
+        app:layout_constraintStart_toStartOf="@+id/button_drink"
+        app:layout_constraintTop_toTopOf="@+id/button_drink"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewDrink"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Пью газировку"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_drink"
+        app:layout_constraintEnd_toEndOf="@+id/button_drink"
+        app:layout_constraintStart_toStartOf="@+id/button_drink"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_drink"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/button_salt"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageView
+        android:id="@+id/emoji_salt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/salt"
+        app:layout_constraintBottom_toBottomOf="@+id/button_salt"
+        app:layout_constraintEnd_toEndOf="@+id/button_salt"
+        app:layout_constraintStart_toStartOf="@+id/button_salt"
+        app:layout_constraintTop_toTopOf="@+id/button_salt"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewSalt"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+
+        android:text="Ем много соленого"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_salt"
+        app:layout_constraintEnd_toEndOf="@+id/button_salt"
+        app:layout_constraintStart_toStartOf="@+id/button_salt"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_salt" />
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/button_nothing"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/square_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageView
+        android:id="@+id/emoji_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nothing"
+        app:layout_constraintBottom_toBottomOf="@+id/button_nothing"
+        app:layout_constraintEnd_toEndOf="@+id/button_nothing"
+        app:layout_constraintStart_toStartOf="@+id/button_nothing"
+        app:layout_constraintTop_toTopOf="@+id/button_nothing"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textViewNothing"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+
+        android:text="Ничего из списка"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/button_nothing"
+        app:layout_constraintEnd_toEndOf="@+id/button_nothing"
+        app:layout_constraintStart_toStartOf="@+id/button_nothing"
+        app:layout_constraintTop_toBottomOf="@+id/emoji_nothing" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
